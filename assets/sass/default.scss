@@ -25,28 +25,31 @@ body {
 }
 
 #content {
-    min-width: 82vmin;
+    width: 70vmin;
     min-height: 82vmin;
 }
 
+/* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-    box-shadow: inset 0 0 1px white;
-}
+
+/* Handle */
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    box-shadow: 0 0 0 1px white;
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .cursor {
     visibility: var(--cursor-visibility);
-        content: "|";
-        overflow: hidden;
-        color: white;
-        animation: blink 500ms linear infinite alternate;
+    content: "|";
+    overflow: hidden;
+    color: white;
+    animation: blink 500ms linear infinite alternate;
 }
 
 #ps1_01, #cd, #ps1_02, #cat, #std_out_01, #ps1_03, #std_out_02, #ps1_04 {
